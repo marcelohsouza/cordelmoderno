@@ -3,23 +3,71 @@
     padding: 0px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive; 
+}
 
 body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 
 header { 
-    background-color: black;    
-}
-
-h1 {
-   color: white; 
-}
-
-.milton {
+    background-color: black;
+    height: 40vh; 
+    text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
+header > h1 {
+   font-variant: small-caps;
+   font-family: var(--fonte2);
+   padding-top: 50px;
+   font-size: 10vw;
+}
+
+header > p{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 50px;
+}
+
+#milton{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte1);
+    font-weight: bold;
+    
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-size: 3.5em;
+    font-family: var(--fonte3);
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.image {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img1 {
+ background-image: url(../pacote-d012/imagens/background001.jpg);
+}
