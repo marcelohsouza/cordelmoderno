@@ -47,21 +47,27 @@ section {
     padding-bottom: 10vh;
     padding-left: 30px;
     line-height: 2em;
-    font-size: 3.5em;
+    font-size: 3.5vw;
     font-family: var(--fonte3);
 }
 
-section.normal {
+.normal {
     background-color: white;
     color: black;
 }
 
-section.image {
+.image {
     background-color: rgb(51, 51, 51);
     color: white;
     box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
     background-size: cover;
     background-attachment: fixed;
+}
+
+.image > p {
+    display: inline-block;
+    padding: 5px; 
+    background-color: rgba(0, 0, 0, 0.253);
 }
 
 section#img1 {
@@ -74,6 +80,7 @@ section#img2 {
 footer {
     background-color: black;
     height: 4vh;
+    padding-top: 15px;
     color: white;
     text-align: center;
 }
