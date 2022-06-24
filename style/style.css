@@ -9,15 +9,13 @@
     --fonte3: 'Sriracha', cursive; 
 }
 
-body{
+html, body{
     min-height: 100vh;
     background-color: darkgray;
-    font-family: var(--fonte1);
 }
 
 header { 
     background-color: black;
-    height: 40vh; 
     text-align: center;
     color: white;
 }
@@ -29,9 +27,19 @@ header > h1 {
    font-size: 10vw;
 }
 
-header > p{
+header > p {
     font-family: Arial, Helvetica, sans-serif;
     padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
 }
 
 #milton{
@@ -51,6 +59,10 @@ section {
     font-family: var(--fonte3);
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 .normal {
     background-color: white;
     color: black;
@@ -59,8 +71,9 @@ section {
 .image {
     background-color: rgb(51, 51, 51);
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgb(0 0 0 / 47%);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.411);
     background-size: cover;
+    background-position: right center;
     background-attachment: fixed;
 }
 
@@ -68,6 +81,7 @@ section {
     display: inline-block;
     padding: 5px; 
     background-color: rgba(0, 0, 0, 0.253);
+    text-shadow: 1px 1px 0px black;
 }
 
 section#img1 {
